@@ -1,0 +1,4 @@
+google-ads==22.0.0
+pandas
+openpyxl
+python-dotenv
