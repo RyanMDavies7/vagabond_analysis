@@ -1,0 +1,91 @@
+###############################################################################
+#  PyCharm / JetBrains IDE                                                   #
+###############################################################################
+.idea/                       # PyCharm project settings
+*.iml                        # IntelliJ-module files (rarely useful in VCS)
+
+###############################################################################
+#  Python runtime artefacts                                                  #
+###############################################################################
+__pycache__/                 # Compiled bytecode
+*.py[cod]                    # .pyc, .pyo, .pyd
+*$py.class                   # Jython-style compiled classes
+*.so                         # Compiled C-extension modules
+
+###############################################################################
+#  Virtual-environment folders                                               #
+###############################################################################
+venv/ .venv/ env/ .env/      # Common virtual-env dir names
+.virtualenv/                 # Poetry ≤1.7 default
+
+###############################################################################
+#  Packaging / build outputs                                                #
+###############################################################################
+build/
+dist/
+wheels/
+downloads/
+sdist/
+#   Egg / wheel metadata
+.eggs/
+*.egg-info/
+*.egg
+#   PyInstaller
+*.manifest
+*.spec
+#   Cython debug symbols
+cython_debug/
+
+###############################################################################
+#  Testing & coverage                                                        #
+###############################################################################
+.tox/ .nox/                  # tox / nox
+.pytest_cache/
+.coverage*                   # coverage.py data & reports
+htmlcov/ coverage.xml
+.nosetests.xml
+
+###############################################################################
+#  Type-checker & static-analysis caches                                     #
+###############################################################################
+.mypy_cache/
+.pyre/
+.pytype/
+.dmypy.json dmypy.json
+
+###############################################################################
+#  Local dependency stores (PEP 582)                                         #
+###############################################################################
+__pypackages__/
+
+###############################################################################
+#  Jupyter & data-science artefacts                                          #
+###############################################################################
+.ipynb_checkpoints/
+*.ipynb~                     # NB-grader backups
+*.csv *.tsv *.parquet        # Large derived datasets (delete if you need them)
+*.log                        # Verbose training/output logs
+
+###############################################################################
+#  OS-specific noise                                                         #
+###############################################################################
+.DS_Store     # macOS
+Thumbs.db     # Windows
+ehthumbs.db
+Icon?
+Desktop.ini
+
+###############################################################################
+#  Secrets & environment files                                               #
+###############################################################################
+.env              # dotenv secrets
+.env.*            # e.g. .env.dev, .env.production
+*.pem             # Private keys
+*.p12 *.pfx
+
+###############################################################################
+#  Editor configs you probably don’t want in VCS                             #
+###############################################################################
+.vscode/
+*.swp *.swo       # Vim swap
+*~                # Editor backups (Emacs, etc.)

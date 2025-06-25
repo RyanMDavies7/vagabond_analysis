@@ -7,7 +7,7 @@ git clone <repo>
 cd windmill_mvp
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env  # fill secrets
+cp .env .env  # fill secrets
 export $(cat .env | xargs)  # or use `dotenv`
 python scripts/gen_excel.py
 ```

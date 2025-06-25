@@ -1,4 +1,5 @@
-google-ads==22.0.0
+google-ads
 pandas
 openpyxl
 python-dotenv
+protobuf~=4.25.8
